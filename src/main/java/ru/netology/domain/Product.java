@@ -12,4 +12,10 @@ public class Product {
     private String name;
     private int price;
 
+    public boolean matches(String search) {
+        if (search.equalsIgnoreCase(name)) {
+            return true;
+        }
+        return false;
+    }
 }
